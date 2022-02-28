@@ -5,15 +5,15 @@ import intro_bg from './img/intro_bg.png';
 
 
 function Start ({nextQuestion}) {
+
     const StartPage = styled.div`
         align-items:center;
         display:flex;
         flex-direction:column;
-        width:100vw;
-        height:100vh;
+        width:100%;
+        height:100%;
         background-color:#f7f7f7;
         overflow:hidden;
-
         .intro_title_box{
             width:100%;
             height:35%;
@@ -40,6 +40,7 @@ function Start ({nextQuestion}) {
             position:absolute;
             bottom:0px;
             width:100%;
+            max-width:480px;
             min-height:56px;
             height:56px;
             color:#fff;

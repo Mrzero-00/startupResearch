@@ -7,8 +7,8 @@ const ResultPage = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    width:100vw;
-    height:100vh;
+    width:100%;
+    height:100%;
     overflow-y:scroll;
     background-color:#f7f7f7;
     color:#000;
@@ -38,8 +38,10 @@ const ResultPage = styled.div`
 
 const ResultBg = styled.div`
     position:absolute;
-    width:100vw;
-    left:0px;
+    width:100%;
+    max-width:480px;
+    transform:translateX(-50%);
+    left:50%;
     height:133px;
     background:url(${result_bg});
     bottom:0px;
@@ -420,16 +422,16 @@ function Result ({counting,resetBtn}) {
         setYourChoise(countingLogic(counting));
         switch(countingLogic(counting)){
             case "yoon":
-                setHref("https://yoonlove.com/");
+                setHref("http://www.sbiz.news/news/articleView.html?idxno=21156");
                 break;
             case "lee":
-                setHref("https://www.jmleetogether.com/web/");
+                setHref("http://www.sbiz.news/news/articleView.html?idxno=21153");
                 break;            
             case "shim":
-                setHref("http://www.심상정.com/home/index.php");
+                setHref("http://www.sbiz.news/news/articleView.html?idxno=21151");
                 break;            
             case "ahn":
-                setHref("https://ahnflix.kr/videoMain/selectMainList");
+                setHref("http://www.sbiz.news/news/articleView.html?idxno=21150");
                 break;
             default:
                 break;

@@ -33,6 +33,7 @@ const QaBox= styled.div`
         }
         .qaGage{
             width:90%;
+            max-width:432px;
             height:4px;
             position:absolute;
             top:1rem;
@@ -103,8 +104,8 @@ const QaPage= styled.div`
         flex-direction:column;
         justify-content:center;
         align-items:center;
-        width:100vw;
-        height:100vh;
+        width:100%;
+        height:100%;
         overflow-y:scroll;
         background-color:#f7f7f7;
         color:#fff;

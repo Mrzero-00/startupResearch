@@ -2,6 +2,18 @@ import React, { useState } from 'react';
 import Question from './Question';
 import Result from './Result';
 import Start from './Start';
+import styled from 'styled-components';
+
+const HomeDiv = styled.div`
+    max-width:480px;
+    width:100vw;
+    height:100vh;
+    margin:0 auto;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+`
 
 function Home () {
     const [pageNum,setPageNum] = useState(0);
@@ -90,14 +102,12 @@ function Home () {
         })
     }
 
-    console.log(counting);
-
     return (
-        <div>
+        <HomeDiv>
             {pageNum===0&&<Start nextQuestion={nextQuestion}></Start>}
             {(pageNum<=10&&pageNum!==0)&&<Question pageNum={pageNum}  counting={counting} setCounting={setCounting} preQuestion={preQuestion} nextQuestion={nextQuestion}></Question>}
             {pageNum===11&&<Result counting={counting} resetBtn={resetBtn}/>}
-        </div>
+        </HomeDiv>
     );
 }
 
