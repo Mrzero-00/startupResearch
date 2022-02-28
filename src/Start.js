@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import intro_bg from './img/intro_bg.jpeg';
+import intro_bg from './img/intro_bg.png';
 
 
 function Start ({nextQuestion}) {
@@ -33,7 +33,7 @@ function Start ({nextQuestion}) {
         .intro_bg_box{
             position:absolute;
             width:100%;
-            height:65%;
+            height:55%;
             bottom:56px;
         }
 

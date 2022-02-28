@@ -28,7 +28,7 @@ const QaBox= styled.div`
             word-break: break-all;
             width:90%;
             text-align:center;
-            font-size:1rem;
+            font-size:1.3rem;
             font-weight:600;
         }
         .qaGage{
@@ -355,8 +355,7 @@ function Question ({pageNum,counting,setCounting,preQuestion,nextQuestion}) {
             }//ahn
         },
     ]
-    const selectLogic = (e)=>{
-        const {name} = e.target;
+    const selectLogic = (name)=>{
         if(counting[`qa_${pageNum}`].result!==name){
             setCounting({
                 ...counting,
@@ -421,25 +420,25 @@ function Question ({pageNum,counting,setCounting,preQuestion,nextQuestion}) {
                     style={{
                         backgroundColor:counting[`qa_${pageNum}`].result==="yoon"&&"#5704E2",
                         color:counting[`qa_${pageNum}`].result==="yoon"&&"#fff"}}  
-                        onClick={selectLogic}
+                        onClick={()=>{selectLogic("yoon")}}
                         dangerouslySetInnerHTML={{__html:qusestionList[pageNum-1].yoon.text}}></button>
                 <button name="lee"  
                     style={{
                         backgroundColor:counting[`qa_${pageNum}`].result==="lee"&&"#5704E2",
                         color:counting[`qa_${pageNum}`].result==="lee"&&"#fff"}}  
-                        onClick={selectLogic}
+                        onClick={()=>{selectLogic("lee")}}
                         dangerouslySetInnerHTML={{__html:qusestionList[pageNum-1].lee.text}}></button>
                 <button name="shim" 
                     style={{
                         backgroundColor:counting[`qa_${pageNum}`].result==="shim"&&"#5704E2",
                         color:counting[`qa_${pageNum}`].result==="shim"&&"#fff"}}     
-                        onClick={selectLogic}
+                        onClick={()=>{selectLogic("shim")}}
                         dangerouslySetInnerHTML={{__html:qusestionList[pageNum-1].shim.text}}></button>
                 <button name="ahn"  
                     style={{
                         backgroundColor:counting[`qa_${pageNum}`].result==="ahn"&&"#5704E2",
                         color:counting[`qa_${pageNum}`].result==="ahn"&&"#fff"}}    
-                        onClick={selectLogic} 
+                        onClick={()=>{selectLogic("ahn")}}
                         dangerouslySetInnerHTML={{__html:qusestionList[pageNum-1].ahn.text}}></button>
             </ChoiceBox>
             <BtnList>
