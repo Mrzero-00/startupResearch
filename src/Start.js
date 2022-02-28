@@ -6,6 +6,7 @@ import intro_bg from './img/intro_bg.jpeg';
 function Start ({nextQuestion}) {
 
     const StartPage = styled.div`
+        position:relative;
         align-items:center;
         display:flex;
         flex-direction:column;
