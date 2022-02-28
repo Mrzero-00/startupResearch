@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import title from './img/Title.svg';
-import intro_bg from './img/intro_bg.png';
+import intro_bg from './img/intro_bg.jpeg';
 
 
 function Start ({nextQuestion}) {
@@ -31,8 +30,10 @@ function Start ({nextQuestion}) {
         }
 
         .intro_bg_box{
+            position:absolute;
             width:100%;
             height:65%;
+            bottom:56px;
         }
 
 
@@ -58,11 +59,15 @@ function Start ({nextQuestion}) {
     `;
 
     const UnderText = styled.div`
+
         position:absolute;
-        width:100%;
+        top:2rem;
+        right:2rem;
         bottom:100px;
-        font-size:0.8rem;
-        text-align:center;
+        font-size:1rem;
+        font-weight:bold;
+        color:#323232;
+        text-shadow:2px 2px 2px rgba(0,0,0,0.1); */
     `
 
     return (
@@ -75,7 +80,7 @@ function Start ({nextQuestion}) {
             </div>
             <img className="intro_bg_box" src={intro_bg}>
             </img>
-            <UnderText>전국구 스타트업 매체 SBIZ-NEWS</UnderText>
+            <UnderText>SBIZ.NEWS</UnderText>
             <button onClick={nextQuestion}>시작하기</button>
         </StartPage>
     );

@@ -9,12 +9,31 @@
       name="description"
       content="당신의 생각을 대변해준 대통령 후보를 찾아보세요. 간단 질문을 찾아보는 20대 대통령 대선후보 매칭 테스트"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>내 생각을 말해준 대선후보는 누구?</title>
+
+    <meta name="twitter:title" content="내 생각을 말해준 대선후보는 누구?" /> 
+    <meta name="twitter:description" content="당신의 생각을 대변해준 대통령 후보를 찾아보세요. 간단 질문을 찾아보는 20대 대통령 대선후보 매칭 테스트" /> 
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo512.png" /> 
+
+    <!— Global site tag (gtag.js) - Google Analytics —>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NV0D559M7H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NV0D559M7H');
+    </script>
+
+    <meta property="og:title" content="내 생각을 말해준 대선후보는 누구?" /> 
+    <meta name="image" property="og:image" content="%PUBLIC_URL%/logo512.png" />
+    <meta property="og:description" content="당신의 생각을 대변해준 대통령 후보를 찾아보세요. 간단 질문을 찾아보는 20대 대통령 대선후보 매칭 테스트" /> 
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,19 +43,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>내 생각을 말해준 대선후보는 누구?</title>
-
-    <meta name="twitter:title" content="내 생각을 말해준 대선후보는 누구?" /> 
-    <meta name="twitter:description" content="당신의 생각을 대변해준 대통령 후보를 찾아보세요. 간단 질문을 찾아보는 20대 대통령 대선후보 매칭 테스트" /> 
-    <meta name="twitter:image" content="%PUBLIC_URL%/ogImg.jpeg" /> 
-
-    <meta property="og:title" content="내 생각을 말해준 대선후보는 누구?" /> 
-    <meta property="og:image" content="%PUBLIC_URL%/ogImg.jpeg" /> 
-    <meta property="og:description" content="당신의 생각을 대변해준 대통령 후보를 찾아보세요. 간단 질문을 찾아보는 20대 대통령 대선후보 매칭 테스트" /> 
 
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" style="background-color: #000;"></div>
     <!--
       This HTML file is a template.
