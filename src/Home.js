@@ -5,7 +5,7 @@ import Start from './Start';
 import styled from 'styled-components';
 
 const HomeDiv = styled.div`
-    max-width:480px;
+    max-width:420px;
     width:100vw;
     height:100vh;
     margin:0 auto;
