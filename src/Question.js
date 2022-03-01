@@ -33,7 +33,7 @@ const QaBox= styled.div`
         }
         .qaGage{
             width:90%;
-            max-width:432px;
+            max-width:378px;
             height:4px;
             position:absolute;
             top:1rem;
