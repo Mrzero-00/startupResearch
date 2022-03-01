@@ -14,12 +14,16 @@ function Start ({nextQuestion}) {
         height:100%;
         background-color:#f7f7f7;
         overflow:hidden;
+        text-shadow:2px 2px 2px rgba(0,0,0,0.1);
+        box-shadow:2px 2px 2px rgba(0,0,0,0.1);
         .intro_title_box{
+            position:absolute;
+            z-index:9;
             width:100%;
-            height:35%;
             font-size:1.25rem;
             font-weight:700;
-            margin:5rem 1rem 1rem 5rem;
+            padding:3rem 1rem 1rem 5rem;
+            /* background-color:rgba(255,255,255,0.6); */
         }
 
         .intro_title_md{
@@ -27,16 +31,15 @@ function Start ({nextQuestion}) {
             height:35%;
             font-size:2rem;
             font-weight:700;
-            margin-top:30px;
+            margin-top:10px;
         }
 
         .intro_bg_box{
             position:absolute;
             width:100%;
-            height:55%;
+            height:65%;
             bottom:56px;
         }
-
 
         button{
             position:absolute;
@@ -62,12 +65,12 @@ function Start ({nextQuestion}) {
     const UnderText = styled.div`
 
         position:absolute;
-        top:2rem;
+        top:1rem;
         right:2rem;
-        bottom:100px;
         font-size:1rem;
         font-weight:bold;
         color:#323232;
+        z-index:99;
         text-shadow:2px 2px 2px rgba(0,0,0,0.1); */
     `
 
